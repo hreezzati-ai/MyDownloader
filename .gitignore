@@ -1,20 +1,28 @@
-*.iml
-.gradle
-.kotlin/
+# Build output
+/target/
+
+# Local, untracked study material (vendor docs extracted for reading)
+/.study/
+
+# Editor / OS
+.vscode/
 .idea/
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+*.swp
+Thumbs.db
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
-# Project exclude paths
-/buildSrc/build/
-/buildSrc/build/classes/kotlin/main/
+__pycache__/
+
+node_modules/
+
+# Impeccable (.claude/skills/impeccable): its engine downloads on first use; personal Claude Code settings
+/.claude/skills/impeccable/scripts/bin/
+/.claude/settings.local.json
+/.impeccable/review/
+/.impeccable/hook.cache.json
+/.impeccable/questions/
+# Agents' git worktrees (Claude Code).
+/.claude/worktrees/
+# Keys (API keys, signing keys): never committed.
+/k/
+# A signature of the ffmpeg list made by hand (tools/release/ffmpeg_list.py sign): a release file.
+/tools/release/ffmpeg-builds.txt.sig
